@@ -9,7 +9,7 @@ describe("Initialization", () => {
     it("test that it returns an object that is an instance of the employee class when called with the new keyword", () => {
         // call the constructor
         const employee = new Employee();
-        //check that it is an inatnce of Employee
+        //check that it is an instance of Employee
         expect(employee instanceof Employee).toBe(true);
     });
     //test that it sets name property based on constructor argument
