@@ -1,7 +1,7 @@
 //const { isMainThread } = require("node:worker_threads");
 const Engineer = require("../lib/Engineer");
 
-const engineerTest = new Engineer("Jonathan Gardner", 2, "engineer@gmail.com", "Engineer")
+const engineerTest = new Engineer("Jonathan Gardner", 3, "engineer@gmail.com", "Engineer")
 
 //descrribe Employee
 describe("Engineer", () => {
@@ -22,7 +22,7 @@ describe("Engineer", () => {
     });
     //test that it sets id property based on constructor argument
     it("it sets id property based on constructor argument", () => {
-        const id = 2;
+        const id = 3;
         const engineer = new Engineer("", id);
         expect(engineer.id).toBe(id);
     });
@@ -45,7 +45,7 @@ describe("getName", () => {
 //describe getId
 describe("getId", () => {
     it("returnes the id property when the getId() method is called", () => {
-        const id = 2;
+        const id = 3;
         const engineer = new Engineer("", id);
         expect(engineer.getId()).toBe(id);
     });
