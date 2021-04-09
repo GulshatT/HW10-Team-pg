@@ -59,6 +59,14 @@ describe("getEmail", () => {
         expect(intern.getEmail()).toBe(email);
     });
 })
+//describe getschool
+describe("getSchool", () => {
+    it("returnes the email property when the getSchool() method is called", () => {
+        const school = "Academy";
+        const intern = new Intern("", 0, "", school);
+        expect(intern.getSchool()).toBe(school);
+    });
+})
 //describe getRole
 describe("getRole", () => {
     it("returnes Engineer property when the getRole() method is called", () => {

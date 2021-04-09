@@ -59,10 +59,19 @@ describe("getEmail", () => {
         expect(engineer.getEmail()).toBe(email);
     });
 })
+
+//describe getGitHub
+describe("getGitHub", () => {
+    it("returnes the GitHub property when the getEmail() method is called", () => {
+        const GitHub = "JonathanG";
+        const engineer = new Engineer("", 0, "", GitHub);
+        expect(engineer.getGitHub()).toBe(GitHub);
+    });
+})
 //describe getRole
 describe("getRole", () => {
     it("returnes Engineer property when the getRole() method is called", () => {
-        const engineer = new Engineer("", 0, "");
+        const engineer = new Engineer("", 0, "", "");
         expect(engineer.getRole()).toBe("Engineer");
     });
 });

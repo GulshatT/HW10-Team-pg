@@ -1,7 +1,7 @@
 //const { isMainThread } = require("node:worker_threads");
 const Manager = require("../lib/Manager");
 
-const managerTest = new Manager("Andrew Finkernagel", 2, "manager@gmail.com", "Manager")
+const managerTest = new Manager("Andrew Finkernagel", 2, "manager@gmail.com", 1001, "Manager")
 
 //descrribe Employee
 describe("Manager", () => {
@@ -57,6 +57,14 @@ describe("getEmail", () => {
         const email = "manager@email.com";
         const manager = new Manager("", 0, email);
         expect(manager.getEmail()).toBe(email);
+    });
+})
+//describe getOffice
+describe("getOffice", () => {
+    it("returnes the email property when the getOffice) method is called", () => {
+        const office = 1001;
+        const manager = new Manager("", 0, "", office);
+        expect(manager.getOffice()).toBe(office);
     });
 })
 //describe getRole
