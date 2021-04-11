@@ -3,18 +3,18 @@ const Manager = require("../lib/Manager");
 
 const managerTest = new Manager("Andrew Finkernagel", 2, "manager@gmail.com", 1001, "Manager")
 
-//descrribe Employee
+//descrribe Manager
 describe("Manager", () => {
 //describe Initialization
-// describe("Initialization", () => {
-//     //test that it returns an object that is an instance of the employee class when called with the new keyword
-//     it("test that it returns an object that is an instance of the engineer class when called with the new keyword", () => {
-//         // call the constructor
-//         const engineer = new Engineer();
-//         //check that it is an instance of Employee
-//         expect(engineer instanceof Engineer).toBe(true);
-//     });
-    //test that it sets name property based on constructor argument
+describe("Initialization", () => {
+//test that it returns an object that is an instance of the employee class when called with the new keyword
+it("test that it returns an object that is an instance of the manager class when called with the new keyword", () => {
+// call the constructor
+const manager = new Manager();
+//check that it is an instance of Manager
+expect(manager instanceof Manager).toBe(true);
+});
+//test that it sets name property based on constructor argument
     it("it sets name property based on constructor argument", () => {
         const name = "";
         const manager = new Manager(name);
@@ -73,4 +73,5 @@ describe("getRole", () => {
         const manager = new Manager("", 0, "");
         expect(manager.getRole()).toBe("Manager");
     });
+});
 });

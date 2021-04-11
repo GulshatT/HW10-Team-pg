@@ -3,17 +3,17 @@ const Engineer = require("../lib/Engineer");
 
 const engineerTest = new Engineer("Jonathan Gardner", 3, "engineer@gmail.com", "Engineer")
 
-//descrribe Employee
+//descrribe Engineer
 describe("Engineer", () => {
 //describe Initialization
 // describe("Initialization", () => {
-//     //test that it returns an object that is an instance of the employee class when called with the new keyword
-//     it("test that it returns an object that is an instance of the engineer class when called with the new keyword", () => {
-//         // call the constructor
-//         const engineer = new Engineer();
-//         //check that it is an instance of Employee
-//         expect(engineer instanceof Engineer).toBe(true);
-//     });
+//test that it returns an object that is an instance of the employee class when called with the new keyword
+it("test that it returns an object that is an instance of the engineer class when called with the new keyword", () => {
+// call the constructor
+const engineer = new Engineer();
+//check that it is an instance of Employee
+expect(engineer instanceof Engineer).toBe(true);
+});
     //test that it sets name property based on constructor argument
     it("it sets name property based on constructor argument", () => {
         const name = "";

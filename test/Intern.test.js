@@ -6,14 +6,14 @@ const internTest = new Intern("Christian Vasquez", 4, "intern@gmail.com", "Inter
 //descrribe Intern
 describe("Intern", () => {
 //describe Initialization
-// describe("Initialization", () => {
-//     //test that it returns an object that is an instance of the employee class when called with the new keyword
-//     it("test that it returns an object that is an instance of the engineer class when called with the new keyword", () => {
-//         // call the constructor
-//         const engineer = new Engineer();
-//         //check that it is an instance of Employee
-//         expect(engineer instanceof Engineer).toBe(true);
-//     });
+describe("Initialization", () => {
+//test that it returns an object that is an instance of the intern class when called with the new keyword
+it("test that it returns an object that is an instance of the engineer class when called with the new keyword", () => {
+// call the constructor
+const engineer = new Intern();
+//check that it is an instance of intern
+expect(engineer instanceof Intern).toBe(true);
+});
     //test that it sets name property based on constructor argument
     it("it sets name property based on constructor argument", () => {
         const name = "";
@@ -73,4 +73,5 @@ describe("getRole", () => {
         const intern = new Intern("", 0, "");
         expect(intern.getRole()).toBe("Intern");
     });
+});
 });
