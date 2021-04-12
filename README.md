@@ -33,3 +33,6 @@ THEN I exit the application, and the HTML is generated
 
 ## TEST SCREENSHOT
 ![portfolio demo](./img/passed.JPG)
+
+## Video
+![Image Alt Text](./img/video.gif)
