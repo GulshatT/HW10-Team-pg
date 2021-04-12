@@ -34,5 +34,9 @@ THEN I exit the application, and the HTML is generated
 ## TEST SCREENSHOT
 ![portfolio demo](./img/passed.JPG)
 
+<<<<<<< HEAD
 ## Video
 ![Image Alt Text](./img/video.gif)
+=======
+
+>>>>>>> f396dc9599529a801e8526b90c34e6275e4edeb4
