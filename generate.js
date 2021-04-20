@@ -2,7 +2,7 @@
 const fs = require("fs");
 
 function writePage (html) {
-    fs.whriteFile("./dist/index.html", html, err => {
+    fs.writeFile("./dist/index.html", html, err => {
         if(err) {
             throw err
         }
@@ -15,7 +15,7 @@ const copyCSS = () => {
         if (err) {
             throw err
         }
-        console.log("style.css filr copied")
+        console.log("style.css file copied")
     });
 }
 module.exports = writePage, copyCSS
