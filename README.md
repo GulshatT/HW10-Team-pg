@@ -36,7 +36,6 @@ THEN I exit the application, and the HTML is generated
 
 <<<<<<< HEAD
 ## Video
-![Image Alt Text](./img/video.gif)
+![Image Alt Text](./img/HW.gif)
 =======
 
->>>>>>> f396dc9599529a801e8526b90c34e6275e4edeb4

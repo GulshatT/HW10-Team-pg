@@ -1,7 +1,7 @@
 //const { isMainThread } = require("node:worker_threads");
 const Manager = require("../lib/Manager");
 
-const managerTest = new Manager("Andrew Finkernagel", 2, "manager@gmail.com", 1001, "Manager")
+const managerTest = new Manager("", 0, "", 0, "")
 
 //descrribe Manager
 describe("Manager", () => {

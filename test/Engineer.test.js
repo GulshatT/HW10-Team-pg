@@ -1,7 +1,7 @@
 //const { isMainThread } = require("node:worker_threads");
 const Engineer = require("../lib/Engineer");
 
-const engineerTest = new Engineer("Jonathan Gardner", 3, "engineer@gmail.com", "Engineer")
+const engineerTest = new Engineer("", 0, "", "")
 
 //descrribe Engineer
 describe("Engineer", () => {
